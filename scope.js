@@ -24,13 +24,11 @@ function one(){
         const website = "youtube"
         console.log(username);
     }
-    // console.log(website);
-
+    // console.log(website);  // this will cause an error as insider function can access the variables declared outside but outside functions can't sometimes this is called clauser in js
      two()
-
 }
 
-// one()
+// one()  //also this two function can't be accessed otside the one function
 
 if (true) {
     const username = "hitesh"
