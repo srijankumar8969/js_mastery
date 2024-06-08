@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)  //changeText is a callback function here which fires when the timeout occurs and second is the time to run the function.Set time out sirf browser me present hota hai and thus it can't be run in node environment (similar for setInterval) also this doesn't return any value but we refer it to a variable so that its reference can be used whenever required.  //These type of functions has a separate execution context means separate from the current call stack and when the time comes it is added to the call stack from the queue in order
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)  //clears the setTimeout means if it hasn't been executed before the #stop is clicked then it wil never be clicked
+        console.log("STOPPED")
+    })
+</script>
+</html>
