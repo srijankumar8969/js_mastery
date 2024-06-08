@@ -1,4 +1,4 @@
-                                                                                            .filter()
+                                                 //.filter()
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // const values = coding.forEach( (item) => {  //filter kabhi koi value return nahi karta hai.
@@ -12,7 +12,7 @@ const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNums.filter( (num) => {   //filter returns a subarray of those elements that satisfy the value.
 //     return num > 4                         //scope open karne ke baad return keyword use karna important hai.
-// } )
+// } );
 
 // const newNums = []
 
@@ -44,7 +44,7 @@ const books = [
 })
   console.log(userBooks);
 
-                                                                                                      .map()
+                                                     //  .map()
 const myNumers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 // const newNums = myNumers.map( (num) => { return num + 10})  //the num target each element of the array myNumber and it also return the array of values  
@@ -55,15 +55,15 @@ const newNums = myNumers   // is tarike se methods ki chaining bhi kar sakte hai
                 .filter((num) => num >= 40)
 
 console.log(newNums);
-                                                                                                    .reduce()
-const myNums = [1, 2, 3]
+                                                     //.reduce()
+const myNum = [1, 2, 3]
 
 // const myTotal = myNums.reduce(function (acc, currval) {
 //     console.log(`acc: ${acc} and currval: ${currval}`);            //accumulator ki value 0 se start hogi and 
 //     return acc + currval
 // }, 0)
 
-const myTotal = myNums.reduce( (acc, curr) => acc+curr, 0)
+const myTotal = myNum.reduce( (acc, curr) => acc+curr, 0)  //accumulator ki value arrow function ke  baad wale element se start hokar har bar accumulator + current val ho jayegi current value hojayegi and current value is the currnt array element here
 
 console.log(myTotal);
 
