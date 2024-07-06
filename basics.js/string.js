@@ -5,11 +5,10 @@ const repoCount = 50
 
 console.log(`Hello my name is name is ${name} and my repo count is ${repocount}`)
 
-const gameName = new String('hitesh-hc-com')  // this is constructor function method of string generation
+const gameName = new String('hitesh-hc-com')  // this is constructor function method of string generation//but typeof the thing generates will be object, but if it is declared by above method then it will be string
 
 // console.log(gameName[0]);
-// console.log(gameName.__proto__); //this show  the property
-
+// console.log(gameName.__proto__); //this show all the properties available with
 
 // console.log(gameName.length);
 // console.log(gameName.toUpperCase());
@@ -30,6 +29,6 @@ const url = "https://hitesh.com/hitesh%20choudhary"
 
 console.log(url.replace('%20', '-')) 
 
-console.log(url.includes('sundar')) //is that present in the string
+console.log(url.includes('sundar'))  //is that present in the string
 
 console.log(gameName.split('-'));  //this converts the string in an array based on the input in the paranthesis
