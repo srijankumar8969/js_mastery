@@ -21,18 +21,17 @@ const myArr2 = new Array(1, 2, 3, 4) //constructor function
 // const newArr = myArr.join()  //this conversts the array into a string
 
 // console.log(myArr);  //remains as it is
-// console.log( newArr);  //it is an string
+// console.log(newArr);  //it is an string
 
 
-// slice, splice alike slce splice cause the selected part tobe removed from the original array and the second input in it is the number of elwments to be selected starting from the index associated with the first input
+// slice, splice alike slice, splice cause the selected part tobe removed from the original array and the second input in it is the number of elments to be selected starting from the index associated with the first input
 
 console.log("A ", myArr);
 
-const myn1 = myArr.slice(1, 3)
+const myn1 = myArr.slice(1, 3);
 
 console.log(myn1);
 console.log("B ", myArr);
-
 
 const myn2 = myArr.splice(1, 3) 
 console.log("C ", myArr);
@@ -48,7 +47,7 @@ const dc_heros = ["superman", "flash", "batman"]
 // console.log(marvel_heros);
 // console.log(marvel_heros[3][1]); 
 
-// const allHeros = marvel_heros.concat(dc_heros)
+// const allHeros = marvel_heros.concat(dc_heros)  //this will create a new array with the elements of the arrays put together but drawback of this is that it can combine nly two arrays at a time
 // console.log(allHeros);
 
 const all_new_heros = [...marvel_heros, ...dc_heros]  //... is the spread operator that separates each element of the arrya as an individual element
@@ -60,10 +59,8 @@ const another_array = [1, 2, 3, [4, 5, 6], 7, [6, 7, [4, 5]]]
 const real_another_array = another_array.flat(Infinity) //array ke ander se sub arrays ke layering hatata hai aur jo iske andetr parameter hai wo depth hai jitne ander tak ke arrays ko kholna hai
 console.log(real_another_array);
 
-
-
-console.log(Array.isArray("Hitesh"))  //returns a boolean value according to wheather its an array or not
-console.log(Array.from("Hitesh"))  // makes array from string only one input is allowd
+console.log(Array.isArray("Hitesh"))  //returns a boolean value according to wheather its an array or not //here answer is false
+console.log(Array.from("Hitesh"))  // makes array from string only one input is allowd//same function can be done by using string_value.split('')
 console.log(Array.from({name: "hitesh"})) // interesting // if not spscified to make array from the key or value it cant make an array and whwnever Array.from cant make an array it returns an empty array
 
 let score1 = 100
