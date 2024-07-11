@@ -8,9 +8,9 @@ const myArr2 = new Array(1, 2, 3, 4) //constructor function
 
 // Array methods
 
-// myArr.push(6)
-// myArr.push(7)
-// myArr.pop()
+// myArr.push(6) //push the element inside the parenthesis at the end of the array
+// myArr.push(7) 
+// myArr.pop() //pop removes the last element from the array and return the element
 
 // myArr.unshift(9) //this adds the element at the starting of the array and thus is not an optimized way of adding element to an aray as the elements need to be shifted for this purpose 
 // myArr.shift()  //removes element from the start of the array
@@ -24,7 +24,7 @@ const myArr2 = new Array(1, 2, 3, 4) //constructor function
 // console.log(newArr);  //it is an string
 
 
-// slice, splice alike slice, splice cause the selected part tobe removed from the original array and the second input in it is the number of elments to be selected starting from the index associated with the first input
+// slice, splice alike slice, splice cause the selected part to be removed from the original array and the second input in it is the number of elments to be selected starting from the index associated with the first input
 
 console.log("A ", myArr);
 
@@ -36,8 +36,6 @@ console.log("B ", myArr);
 const myn2 = myArr.splice(1, 3) 
 console.log("C ", myArr);
 console.log(myn2);
-
-
 
 const marvel_heros = ["thor", "Ironman", "spiderman"]  
 const dc_heros = ["superman", "flash", "batman"]
