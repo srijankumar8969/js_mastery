@@ -11,7 +11,7 @@ const mySym = Symbol("key1")
 const JsUser = {
     name: "Hitesh",
     "full name": "Hitesh Choudhary",
-    [mySym]: "mykey1",      //you first need to declare the symbol outside and then add in the string with [] around it and also it can be accessed with JsUser[without quotation mark]
+    [mySym]: "mykey1",      //you first need to declare the symbol outside and then add in the string with [] around it and also it can be accessed with JsUser[without quotation mark] and remember in this case the outside variable is not getting overwritten  
     age: 18,
     location: "Jaipur",
     email: "hitesh@google.com",
@@ -60,6 +60,7 @@ const regularUser = {
 }
 
 // console.log(regularUser.fullname.userfullname.firstname);
+//regularUser['fullname']['userfullname']['firstname']
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -72,10 +73,10 @@ const obj4 = {5: "a", 6: "b"}
 // const obj3 = Object.assign({}, obj1, obj2, obj4)  //this wll remove the curly brace from the objects and will add them in first object thus first array also changes thus is important to transfer an empty array
 
 const obj3 = {...obj1, ...obj2} //spread operator
-// console.log(obj3);
+// console.log(obj3)
+//thus in this way if we want to add some more fields to it or can update an existing field and wrap it in the {} e.g. let obj2= {...obj1,1:'e',3:'r'}
 
-
-const users = [          //array of objects
+const users = [          //array of objects   //used in JSON and also while managing databases
     {
         id: 1,
         email: "h@gmail.com"
@@ -92,21 +93,16 @@ const users = [          //array of objects
 
 users[1].email
 // console.log(tinderUser);
-
 // console.log(Object.keys(tinderUser));  //return keys as array
 // console.log(Object.values(tinderUser));  //return values as array
 // console.log(Object.entries(tinderUser));  return array in which each key value pair is a sub array 
-
 // console.log(tinderUser.hasOwnProperty('isLoggedIn'));  /to check whether a particular key is present in the the object
-
 
 const course = {
     coursename: "js in hindi",
     price: "999",
     courseInstructor: "hitesh"
 }
-
-
                                                           Object Destructuring
 // course.courseInstructor  //ye likhn me kapho bada hai is liye hum destructure karte hain objects ko
 
