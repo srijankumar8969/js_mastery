@@ -16,7 +16,7 @@ for (const greet of greetings) {
 
 // Maps
 
-const map = new Map()  //uniique values ko hold karta hai and order ko maintain rakhta hai
+const map = new Map()  //unique values ko hold karta hai and order ko maintain rakhta hai
 map.set('IN', "India")
 map.set('USA', "United States of America")
 map.set('Fr', "France")
@@ -25,8 +25,12 @@ map.set('IN', "India")
 
 // console.log(map);
 
-for (const [key, value] of map) {  // is tarike se key  and value uniquely hold ki jati hai.
+for (const [key, value] of map) {  // is tarike se key and value uniquely hold ki jati hai.
     // console.log(key, ':-', value);
+}
+
+for (const mapElem of map) {  // is tarike se key and value uniquely hold ki jati hai.
+    // console.log(MapElem);  //MapElem contain arrays with map keys and values as array elements 
 }
 
 const myObject = {
@@ -63,7 +67,7 @@ for (const key in programming) {  //array hold athe data  as key (index) value p
 // map.set('IN', "India")
 
 // for (const key in map) {
-//     console.log(key);   // this is not iteratable
+//     console.log(key);   // this is not iteratable becaue Map doesn't support for in loop
 // };
                                                                             for each loop
 const coding = ["js", "ruby", "java", "python", "cpp"]
@@ -102,6 +106,5 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    
     console.log(item.languageName);
 } )
