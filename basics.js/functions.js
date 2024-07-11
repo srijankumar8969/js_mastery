@@ -10,7 +10,7 @@ function sayMyName(){
 
 // sayMyName()
 
-// function addTwoNumbers(number1, number2){  //functions ke ander parameters ka koi data type nahi hota isliye agar kabhi number ki jagah kio string bhi pass karde to ye usko bhi add kane ki kosis karega and baad me 
+// function addTwoNumbers(number1, number2){  //functions ke ander parameters ka koi data type nahi hota isliye agar kabhi number ki jagah kio string bhi pass karde to ye usko bhi add kane ki kosis karega and baad me if it will not be able to do that then returns NaN so to resist this types of type related errors we use Typescript 
 //     console.log(number1 + number2);
 // }
 
@@ -28,7 +28,7 @@ const result = addTwoNumbers(3, 5)  //returned value result ke ander aajayegi
 function loginUserMessage(username){
     if(!username){                                         //agar username me user koi arguement pass nahi karega toh uski value undefined rahegi and undefined value ko false mana jata hai
         console.log("PLease enter a username");
-        return                                               //return type na hone ke karan function se agar kuch bhi return na karo toh bhi chalta hai iscase me undefined return hota hai
+        return                                                //return type na hone ke karan function se agar kuch bhi return na karo toh bhi chalta hai iscase me undefined return hota hai
     }
     return `${username} just logged in`
 }
@@ -41,9 +41,9 @@ function loginUserMessage(username = "sam"){  // the method of default parameter
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){   //... function ke ander rst operator ka kaam karta hai aur iska use hota hai agar aapko ye pata nahi ki kitni values aane wali hai rest operator ke ander jitni bhi vslues user ke aur se pass ki jati hai wo usko ek array me band kar deta hai
+function calculateCartPrice(val1, val2, ...num1){   //... function ke ander rest operator ka kaam karta hai aur iska use hota hai agar aapko ye pata nahi ki kitni values aane wali hai rest operator ke ander jitni bhi vslues user ke aur se pass ki jati hai wo usko ek array me band kar deta hai
     return num1
-}
+} // if more than two paramets are there then we will have 
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))  // 200 aur 400, val1 aur val2 me chale gaye and rest sari cheezen rest operator ke ander chali jayegi
 
