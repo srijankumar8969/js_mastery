@@ -21,11 +21,12 @@ let myTimeStamp = Date.now()
 let newDate = new Date()
 console.log(newDate);
 console.log(newDate.getMonth() + 1); //+1  is done so that the end user doesn't get confused as months starts from 0 is js
-console.log(newDate.getDay());
+console.log(newDate.getDay()); //konsa day hai and sunday is 0
+console.log(newDate.getDate());//date kya hai uska original number
 
 // `${newDate.getDay()} and the time `
 
 newDate.toLocaleString('default', { //first one is timezone and { } ke ander different properties jo access kar sakte hai uski values ke roop me uski type likhte hain
     weekday: "long",                 
-    
-})
+    month:'short'
+}) //this is one of the ast ways of getting date
