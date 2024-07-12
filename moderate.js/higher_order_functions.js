@@ -34,7 +34,7 @@ ho(2,3,bam);
 
 function val(num1,num2){
     var add= num1+num2;
-    return ()=> console.log(add);
+    return ()=> console.log(add);  // in this way if we pass the defination of the function then we simply pass it completely into the variable containing it thus need to be runned by that variable
 }
     var sum = val(2,3); //the function has been returned into sum thus to run the function you will have to call it
     sum();
