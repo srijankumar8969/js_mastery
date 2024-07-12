@@ -1,9 +1,9 @@
                                                  //.filter()
 // const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// const values = coding.forEach( (item) => {  //filter kabhi koi value return nahi karta hai.
+// const values = coding.forEach( (item) => {  //forEach kabhi koi value return nahi karta hai.
 //     //console.log(item);
-//     return item
+//     return item  //even this will not allow to pass aything to the variable
 // } );
 
 // console.log(values);
@@ -58,13 +58,13 @@ console.log(newNums);
                                                      //.reduce()
 const myNum = [1, 2, 3]
 
-// const myTotal = myNums.reduce(function (acc, currval) {
+// const myTotal = myNums.reduce(function (acc, currval){
 //     console.log(`acc: ${acc} and currval: ${currval}`);            //accumulator ki value 0 se start hogi and 
 //     return acc + currval
 // }, 0)
 
 const myTotal = myNum.reduce( (acc, curr) => acc+curr, 0)  //accumulator ki value arrow function ke  baad wale element se start hokar har bar accumulator + current val ho jayegi current value hojayegi and current value is the currnt array element here
-
+//function se jo bhi return hog wo accumulator ke ander chala jata hai
 console.log(myTotal);
 
 const shoppingCart = [
