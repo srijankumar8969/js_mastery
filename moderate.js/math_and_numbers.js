@@ -4,7 +4,7 @@ const score = 400
 const balance = new Number(100)  //constructor function
 // console.log(balance);
 
-// console.log(balance.toString().length); //first toString convers the number to a string and thus the properties of string can be applied to it
+// console.log(balance.toString().length); //first toString converts the number to a string and thus the properties of string can be applied to it
 // console.log(balance.toFixed(1));  //this gives value upto decimal place fixed upto 1 after decimal because the input within the perenthesis is 1
 
 const otherNumber = 1123.8966
