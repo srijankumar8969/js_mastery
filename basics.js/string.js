@@ -10,7 +10,7 @@ const gameName = new String('hitesh-hc-com')  // this is constructor function me
 // console.log(gameName[0]);
 // console.log(gameName.__proto__); //this show all the properties available with
 
-// console.log(gameName.length);
+// console.log(gameName.length);//this also count the null character
 // console.log(gameName.toUpperCase());
 console.log(gameName.charAt(2));  //returns char at a position within the length of the string and returns nothing otherwise and if you are pointing at  the gap within the string
 console.log(gameName.indexOf('t'));  //this gives the position of t and returns -1 if the char is not present in the string
