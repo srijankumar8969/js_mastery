@@ -91,7 +91,7 @@ everything else than falsy value . Some surprising cases "false", "0", [], {}, f
 
 const emptyObj = {}
 
-if (Object.keys(emptyObj).length === 0) {
+if (Object.keys(emptyObj).length === 0) {//Object.keys se naya array create hota hai keys ka
     console.log("Object is empty");
 }
 
@@ -101,7 +101,7 @@ let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
 // val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20
+val1 = null ?? 10 ?? 20 //agar aage wali value false hai to uske baad wali value usme put kardo;
 
 console.log(val1);
 
