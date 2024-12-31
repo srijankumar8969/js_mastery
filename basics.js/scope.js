@@ -1,10 +1,14 @@
 //var c = 300  //var has a functional scope thus it is not bound by the curly braces. But let and const has a block scope thus is bound by {}.Also var can be declared multiple times under the same block or function but let and const can't be declared multiple times under the same block.
-let a = 300
+
+ let cant be used before declaration but var can be// but the answer in the var will be undefined                                                               |
+ var can be redeclared in the same scope but let cant be
+let has a block scope but var has a global scope means it can be used outside the block in which it is declared
+                                                                
+let a = 300//
 if (true) {
     let a = 10;
     const b = 20;
     console.log("INNER: ", a);  //agar ander let a=30; nahi kiya rehta toh a ki value global scope me talashi jaati
-    
 }
 let a = 300
 function  tuf() {
@@ -46,7 +50,7 @@ if (true) {
 
 
 console.log(addone(5))  //addOne is just a function and thus gets hoisted and thus is correct
-
+//it is possible because during compilation the defnation is added to the global scope and thus when it is called the function is executed
 function addone(num){
     return num + 1
 }
