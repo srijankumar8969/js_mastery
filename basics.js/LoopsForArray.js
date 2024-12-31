@@ -108,3 +108,31 @@ const myCoding = [
 myCoding.forEach( (item) => {
     console.log(item.languageName);
 } )
+
+
+//maps in js
+// Create a new Map
+const map = new Map();
+
+// Add elements to the Map
+map.set(key, value);
+
+// Get the value associated with a key
+map.get(key);
+
+// Check if a key exists in the Map
+map.has(key);
+
+// Remove a key-value pair from the Map
+map.delete(key);
+
+// Get the size (number of key-value pairs) of the Map
+map.size;
+
+// Clear all key-value pairs from the Map
+map.clear();
+
+// Iterate over the Map
+for (let [key, value] of map) {
+  console.log(key, value);
+}
