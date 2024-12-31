@@ -1,3 +1,9 @@
+//if, else, else if, switch
+// truthy and falsy value(imp [],{} are considered as truthy value)
+//null coalesing operator(?? peeche wale hoga ararpehle wala ek falsy value hai)
+//ternary operator (condition ? something : somthing else);
+
+
 // if
 const isUserloggedIn = true
 const temperature = 41
@@ -18,7 +24,7 @@ const temperature = 41
 //     console.log(`User power: ${power}`);
 // }
 
-// console.log(`User power: ${power}`);
+// console.log(`User power: ${power}`);//this code will create an issue
 
 
 // const balance = 1000
@@ -101,8 +107,8 @@ let val1;
 // val1 = 5 ?? 10
 // val1 = null ?? 10
 // val1 = undefined ?? 15
-val1 = null ?? 10 ?? 20 //agar aage wali value false hai to uske baad wali value usme put kardo;
 
+val1 = null ?? 10 ?? 20 //agar aage wali value false hai to uske baad wali value usme put kardo;
 console.log(val1);
 
 // Terniary Operator
