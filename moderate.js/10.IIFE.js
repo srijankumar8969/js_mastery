@@ -7,6 +7,6 @@
 
 //IIFE ko bahar se call nahi kiya ja sakta hai and thus iske naam ki bhi need nahi hoti hai
 
-( (name) => {
+((name)=>{
     console.log(`DB CONNECTED TWO ${name}`);
-} )('hitesh');
+})('hitesh');
