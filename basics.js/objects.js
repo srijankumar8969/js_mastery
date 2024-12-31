@@ -1,12 +1,10 @@
                                                                        Objects 
-
 // singleton  --> object lateral method se singleton object kabhi nahi banta hai
 // Object.create
 
 // object literals
  //array is also an object in which the keys are indeces
-const mySym = Symbol("key1")
-
+const mySym = Symbol("key1");
 
 const JsUser = {
     name: "Hitesh",
@@ -19,14 +17,14 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"]) //isi case ke liye [] wala method nikala gaya hai
-// console.log(JsUser[mySym])
+// console.log(JsUser.email);
+// console.log(JsUser["email"]);
+// console.log(JsUser["full name"]); //isi case ke liye [] wala method nikala gaya hai
+// console.log(JsUser[mySym]);
 
-JsUser.email = "hitesh@chatgpt.com"  // we can change the value by this method
+JsUser.email = "hitesh@chatgpt.com";  // we can change the value by this method
 // Object.freeze(JsUser)   // ab kiye janawala koi bhi change actual object ko prabhawit nahi karaga
-JsUser.email = "hitesh@microsoft.com"
+JsUser.email = "hitesh@microsoft.com";
 // console.log(JsUser);
 
 JsUser.greeting = function(){ // is tarike se aap Object ke bahar bhi key value pair declare kar sakte hain
@@ -38,7 +36,6 @@ JsUser.greetingTwo = function(){
 
 console.log(JsUser.greeting());
 console.log(JsUser.greetingTwo());
-
 
 // const tinderUser = new Object()          // is method se singleton object declare hota hai
 const tinderUser = {}
@@ -66,9 +63,9 @@ const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
 const obj4 = {5: "a", 6: "b"}
 
-
                                                            Adding two objects
-// const obj3 = { obj1, obj2 }  object 3 will take obj1 and object 2 as input 
+
+// const obj3 = { obj1, obj2 }  object 3 will take obj1 and object 2 as input like this// { obj1: { '1': 'a', '2': 'b' }, obj2: { '3': 'a', '4': 'b' } }
 // const obj3 = Object.assign( obj1, obj2, obj4)   //is case me obj1 bhi change ho kar obj3 ke hi barabar ho chuka 
 // const obj3 = Object.assign({}, obj1, obj2, obj4)  //this wll remove the curly brace from the objects and will add them in first object thus first array also changes thus is important to transfer an empty array
 
@@ -114,8 +111,7 @@ console.log(instructor);
 
                                                         API and JSON
 
-
-
+//best thing to hande this things is to get the idea of what kind of data does the api send by using that in postman
 // {
 //     "name": "hitesh",
 //     "coursename": "js in hindi",
