@@ -26,7 +26,7 @@
     const requestUrl = 'https://api.github.com/users/hiteshchoudhary'
     const xhr = new XMLHttpRequest();  //XMLHttpRequest ka naya instance banao means a new object of its type
     xhr.open('GET', requestUrl); //XMLHttpRequest has many states 0-4 once .open is called state becomes 1
-    xhr.onreadystatechange = function(){
+    xhr.onreadystatechange = ()=>{
         console.log(xhr.readyState);  //readyState contains the info. of the state of the obj
         if (xhr.readyState === 4) {  //or we can use this.readyState
             const data = JSON.parse(this.responseText);
