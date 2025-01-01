@@ -7,7 +7,8 @@ Javascript code gets executed in two phase that are 1. Memory creation phase 2. 
 e.g. code 
 let var1 = 10;
 let var2 = 5;
-funnction addnum(num1, num2){
+
+function addnum(num1, num2){
 let total = num1 + num2;
   return total;
 }
