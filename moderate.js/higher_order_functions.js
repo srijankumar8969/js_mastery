@@ -28,7 +28,7 @@ ho(2,3,bam);
 //$("").addEventListener("click",function(){
 //    console.log
 //}
-
+//when the event happens then the callback function is run
 
 //returning a function
 
