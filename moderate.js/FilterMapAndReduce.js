@@ -63,7 +63,7 @@ const myNum = [1, 2, 3]
 //     return acc + currval
 // }, 0)
 
-const myTotal = myNum.reduce( (acc, curr) => acc+curr, 0)  //accumulator ki value arrow function ke  baad wale element se start hokar har bar accumulator + current val ho jayegi current value hojayegi and current value is the currnt array element here
+const myTotal = myNum.reduce( (acc, curr) => acc+curr, 0)//accumulator ki value arrow function ke baad wale element se start hokar har bar accumulator + current val ho jayegi current value hojayegi and current value is the currnt array element here
 //function se jo bhi return hog wo accumulator ke ander chala jata hai
 console.log(myTotal);
 
