@@ -1,6 +1,6 @@
-//a promise is an object which represents the eventual compleion of an async operation and its resulting value
+//a promise is an object which represents the eventual completion of an async operation and its resulting value
 
-const promiseOne = new Promise(function(resolve, reject){  // a new instance of Promise is created a function is called inside it means Promise gives the function a power to get moved from the call stack and make its own execution context separate from the call stack and when the work is completed the reference return tothe mai call stack 
+const promiseOne = new Promise(function(resolve, reject){  // a new instance of Promise is created a function is called inside it means Promise gives the function a power to get moved from the call stack and make its own execution context separate from the call stack and when the work is completed the reference return tothe mai call stack
     //Do an async task
     // DB calls, cryptography, network
     setTimeout(function(){
@@ -9,9 +9,10 @@ const promiseOne = new Promise(function(resolve, reject){  // a new instance of 
     }, 1000)
 });
 
-//when a promise is created its execution stats to occur at that time but what to do after the work is done is not known by it thus we use .then(()=>{})  //.then() is a higher order function that takes a callback function input that executes when the work is done and the insider function is not asynchronous  //aslo for the .then mthod to work you need to run resolve() inside the promise 
+//once promise is made its execution start to perform and doesnot need any otherthing to start
+//when a promise is created its execution starts to occur at that time but what to do after the work is done is not known by it thus we use .then(()=>{})  //.then() is a higher order function that takes a callback function input that executes when the work is done and the insider function is not asynchronous  //aslo for the .then method to work you need to run resolve() inside the promise 
 
-promiseOne.then(function(){
+promiseOne.then(()=>{
     console.log("Promise consumed");
 });
 
@@ -25,7 +26,7 @@ new Promise(function(resolve, reject){
 })
 
 const promiseThree = new Promise(function(resolve, reject){
-    setTimeout(function(){
+    setTimeout(()=>{
         resolve({username: "Chai", email: "chai@example.com"})
     }, 1000)
 })
@@ -69,7 +70,7 @@ const promiseFive = new Promise(function(resolve, reject){
     }, 1000)
 });
 
-//is tarike se bhi by use of async function we can handle promise and it gives the same result but here the cas is you first stores the result in try block and if resolve is called it will be returned and stored to the variable in try and if the reject is called then catch will be called.
+//is tarike se bhi by use of async function we can handle promise and it gives the same result but here the case is you first stores the result in try block and if resolve is called it will be returned and stored to the variable in try and if the reject is called then catch will be called.
 async function consumePromiseFive(){
     try {
         const response = await promiseFive;
@@ -78,14 +79,12 @@ async function consumePromiseFive(){
         console.log(error);
     }
 }
+
 consumePromiseFive()
-
-
 
 // async function getAllUsers(){
 //     try {
 //         const response = await fetch('https://jsonplaceholder.typicode.com/users')
-
 //         const data = await response.json()
 //         console.log(data);
 //     } catch (error) {
@@ -93,7 +92,7 @@ consumePromiseFive()
 //     }
 // }
 
-//getAllUsers()
+//getAllUsers();
 
 fetch('https://api.github.com/users/hiteshchoudhary')  //fetch is a promise in itself used to get the data 
 .then((response) => {
@@ -102,7 +101,7 @@ fetch('https://api.github.com/users/hiteshchoudhary')  //fetch is a promise in i
 .then((data) => {
     console.log(data);
 })
-.catch((error) => console.log(error))
+.catch((error) => console.log(error));
 
 // promise.all
 // yes this is also available, kuch reading aap b kro.*/
