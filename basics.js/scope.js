@@ -1,41 +1,39 @@
-//var c = 300  //var has a functional scope thus it is not bound by the curly braces. But let and const has a block scope thus is bound by {}.Also var can be declared multiple times under the same block or function but let and const can't be declared multiple times under the same block.
+// var c = 300  // var has a function scope and is not bound by curly braces. let and const have block scope and are bound by {}. Also, var can be declared multiple times within the same function.
 
- let cant be used before declaration but var can be// but the answer in the var will be undefined                                                               |
- var can be redeclared in the same scope but let cant be
-let has a block scope but var has a global scope means it can be used outside the block in which it is declared
-                                                                
-let a = 300//
+let cannot be used before declaration, but var can be // the value of the var will be undefined 
+var can be redeclared in the same scope, but let cannot be
+let has a block scope, but var has a function scope and can be used outside the block in which it is declared
+
+let a = 300;
 if (true) {
     let a = 10;
     const b = 20;
-    console.log("INNER: ", a);  //agar ander let a=30; nahi kiya rehta toh a ki value global scope me talashi jaati
+    console.log("INNER: ", a);  // if let a=30; was not declared inside, the value of a would be searched in the global scope
 }
-let a = 300
-function  tuf() {
-    console.log("Outer: ", a);  //yaha bhi a bahar ka accessible hai
-    
+// let a = 300; // this will cause an error because a is already declared with let
+function tuf() {
+    console.log("Outer: ", a);  // here, the outer a is accessible
 }
-  //node aur browser ka global scope alag hai
-console.log(a);  //this gives the value
+// node and browser have different global scopes
+console.log(a);  // this gives the value
 // console.log(b);
 // console.log(c);
 
-
 function one(){
-    const username = "hitesh"
+    const username = "hitesh";
 
     function two(){
-        const website = "youtube"
+        const website = "youtube";
         console.log(username);
     }
-    // console.log(website);  // this will cause an error as insider function can access the variables declared outside but outside functions can't sometimes this is called clauser in js
-     two()
+    // console.log(website);  // this will cause an error as inner functions can access variables declared in outer functions, but outer functions can't access inner variables. This is sometimes called closure in JS
+    two();
 }
 
-// one()  //also this two function can't be accessed otside the one function
+// one();  // also, the two function can't be accessed outside the one function
 
 if (true) {
-    const username = "hitesh"
+    const username = "hitesh";
     if (username === "hitesh") {
         const website = " youtube";
         // console.log(username + website);
@@ -43,19 +41,21 @@ if (true) {
     // console.log(website);  // this will cause an error 
 }
 
-// console.log(username);  // this will also cause error to occur
+// console.log(username);  // this will also cause an error 
 
 
 // ++++++++++++++++++ interesting ++++++++++++++++++
 
-
-console.log(addone(5))  //addOne is just a function and thus gets hoisted and thus is correct
-//it is possible because during compilation the defnation is added to the global scope and thus when it is called the function is executed
+console.log(addone(5));  // addOne is just a function and thus gets hoisted, so this is correct
+// it is possible because during compilation, the definition is added to the global scope and thus when it is called, the function is executed
 function addone(num){
-    return num + 1
+    return num + 1;
 }
 
-
+addTwo(5);  // this will cause an error as the function addTwo is considered an expression and stored in a const variable, so it doesn't get hoisted
+const addTwo = function(num){
+    return num + 2;
+};
 
 addTwo(5)  //this will be cause an error as the function addTwo is considered as an expression and stored in const variable and thus doesn't gets hoisted
 const addTwo = function(num){
