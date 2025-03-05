@@ -43,7 +43,7 @@ function loginUserMessage(username = "sam"){  // the method of default parameter
 
 function calculateCartPrice(val1, val2, ...num1){   //... function ke ander rest operator ka kaam karta hai aur iska use hota hai agar aapko ye pata nahi ki kitni values aane wali hai rest operator ke ander jitni bhi vslues user ke aur se pass ki jati hai wo usko ek array me band kar deta hai
     return num1
-} // if more than two paramets are there then we will have 
+} // if more than two paramets are there then we will have things getting stored in the num1 as an array elements
 
 // console.log(calculateCartPrice(200, 400, 500, 2000))  // 200 aur 400, val1 aur val2 me chale gaye and rest sari cheezen rest operator ke ander chali jayegi
 
