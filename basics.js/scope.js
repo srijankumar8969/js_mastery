@@ -3,6 +3,11 @@
 let cannot be used before declaration, but var can be // the value of the var will be undefined 
 var can be redeclared in the same scope, but let cannot be
 let has a block scope, but var has a function scope and can be used outside the block in which it is declared
+if(true){
+    var tim = 10;
+    console.log(tim);
+}
+console.log(tim);//this is possible because var doesnot have a block scope it has a functional or globval scope thus it leaks out of the block and goes to the outside functional scope
 
 let a = 300;
 if (true) {
