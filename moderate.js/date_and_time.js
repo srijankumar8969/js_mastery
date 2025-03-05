@@ -29,4 +29,4 @@ console.log(newDate.getDate());//date kya hai uska original number
 newDate.toLocaleString('default', { //first one is timezone and { } ke ander different properties jo access kar sakte hai uski values ke roop me uski type likhte hain
     weekday: "long",                 
     month:'short'
-}) //this is one of the ast ways of getting date
+}) // this is one of the ast ways of getting date
