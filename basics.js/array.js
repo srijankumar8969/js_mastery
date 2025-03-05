@@ -1,4 +1,10 @@
 // array  //it is an object, it cause shallow copies (the variable with which it is copied share the same reference point)
+//to avoid shallow coping we have structuredClone()
+let original = [{ name: "Aman", age: 25 }, { name: "Ravi", age: 30 }];
+let deepCopy = structuredClone(original);
+// Modify original
+original[0].age = 26;
+console.log(deepCopy[0].age); // Output: 25 (Deep copy remains unchanged!)
 
 const myArr = [0, 1, 2, 3, 4, 5]
 const myHeors = ["shaktiman", "naagraj"]
@@ -38,7 +44,7 @@ console.log("C ", myArr);
 console.log(myn2);
 
 const marvel_heros = ["thor", "Ironman", "spiderman"]  
-const dc_heros = ["superman", "flash", "batman"]
+const dc_heros = ["superman", "flash", "batman"]          
 
 // marvel_heros.push(dc_heros)  //whole dc_heroes got pushed as a separate array into the marvel_heroes
 
