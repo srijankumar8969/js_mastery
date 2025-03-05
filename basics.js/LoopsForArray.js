@@ -22,8 +22,8 @@ map.set('USA', "United States of America")
 map.set('Fr', "France")
 map.set('IN', "India")
 
-
 // console.log(map);
+map.get('IN')
 
 for (const [key, value] of map) {  // is tarike se key and value uniquely hold ki jati hai.
     // console.log(key, ':-', value);
