@@ -30,7 +30,7 @@ for (const [key, value] of map) {  // is tarike se key and value uniquely hold k
 }
 
 for (const mapElem of map) {  // is tarike se key and value uniquely hold ki jati hai.
-    // console.log(MapElem);  //MapElem contain arrays with map keys and values as array elements 
+    // console.log(mapElem);  //mapElem contain arrays with map keys and values as array elements //each arrayy has first element as key and second as value
 }
 
 const myObject = {
@@ -38,7 +38,7 @@ const myObject = {
     game2: 'Spiderman'
 }
 
-// for (const [key, value] of myObject) {  //object ke case me ye iteratable by for of loop
+// for (const [key, value] of myObject) {  //object ke case me ye not iteratable by for of loop
 //     console.log(key, ':-', value);
 // }
 
@@ -67,7 +67,7 @@ for (const key in programming) {  //array hold athe data  as key (index) value p
 // map.set('IN', "India")
 
 // for (const key in map) {
-//     console.log(key);   // this is not iteratable becaue Map doesn't support for in loop
+//     console.log(key);   // this is not iteratable becaue Map doesn't support for in loo
 // };
                                                                             for each loop
 const coding = ["js", "ruby", "java", "python", "cpp"]
@@ -88,7 +88,7 @@ const coding = ["js", "ruby", "java", "python", "cpp"]
 
 // coding.forEach( (item, index, arr)=> {   //har  ek  value, index, complete array can be accessed.
 //     console.log(item, index, arr);
-// } )
+// } 
 
 const myCoding = [
     {
